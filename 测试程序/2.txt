@@ -1,0 +1,14 @@
+int zero()
+{
+	return (0);
+}
+
+void main()
+{
+	int i,j[10],k,m[10];
+	i=5;
+	m[zero()]=1;
+	j[i+i*zero()/('a'+'b')-(i+-1)]=i;
+	printf("j[1]:",j[1]);
+	printf("i:",j[i+m[i-i]-i]);
+}

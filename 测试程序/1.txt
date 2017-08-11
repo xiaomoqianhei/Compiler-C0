@@ -1,0 +1,56 @@
+const int min=0,max=5;
+const char c='a';
+
+int n,fib[15];
+char m;
+
+char t0()
+{
+	int i,j;
+	char _a,___b,c00,d[100];
+	printf("input i:");
+	scanf(i);
+	printf("i:");
+	printf(i);
+	printf("input j:");
+	scanf(j);
+	printf("j:",j);
+	printf("input operate:");
+	scanf(_a);
+	printf("_a:",_a);
+	switch(_a){
+		case '+':printf("i+j:",i+j);
+		case '-':printf("i-j:",i-j);
+		case '*':printf("i*j:",i*j);
+		case '/':printf("i/j:",i/j);
+		default:printf("undefined oprator.");
+	}
+	return (_a);
+}
+
+void calfib()
+{
+	int i;
+	fib[0]=0;
+	fib[1]=1;
+	i=2;
+	while(i<15){
+		fib[i]=fib[i-1]+fib[i-2];
+		i=i+1;
+	}
+}
+
+int getfib(int i)
+{
+	return (fib[i]);
+}
+
+void main()
+{
+	int i;
+	calfib();
+	t0();
+	printf("input i:");
+	scanf(i);
+	printf("fib(i):",getfib(i));
+}

@@ -1,0 +1,126 @@
+const int i=0,ii=-1,iii=+1;
+const char a='a',A='A',_PluS='+',s_u_b='-',mul='*',div='/';
+
+char m,n,mmm;
+int sSsSsS,sSS;
+int fib[15];
+
+void TestIO()
+{
+	int i,j[5],k;
+	char a,b,c[4];
+	
+	printf(" !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
+    printf("");
+	scanf(i,k);
+	j[1]=k;
+	printf(" TestIO i: ",i);
+	printf(" TestIO j[1]: ",j[1]);
+	printf(" TestIO k: ",k);
+	scanf(a,b);
+	c[0]=a;
+	printf(" TestIO a: ",a);
+	printf(" TestIO b+1: ",b+1);
+	printf(" TestIO c[0]*2: ",c[0]*2);
+	
+	return;
+}
+
+void TestCond()
+{
+	int n;
+	scanf(n);
+	switch(n){
+		case 0:printf("result 0");
+		case 1:printf("result 1");
+		case +2:printf("result +2");
+		case -1:{
+			printf("result -1");
+		}
+	}
+	
+	switch(n){
+		case 0:printf("result 000");
+		default:{
+			printf("!result 000");
+		}
+	}
+}
+
+void TestIf()
+{
+	int n;
+	scanf(n);
+	if(n>0){
+		printf("n>0");
+	}
+	if(n<0){
+		printf("n<0");
+	}
+	if(n==0){
+		printf("n==0");
+		return;
+	}
+	if(n>=0){
+		printf("n>=0");
+	}
+	if(n<=0){
+		printf("n<=0");
+	}
+	if(n!=0){
+		printf("n!=0");
+	}
+	if(n-n==0)
+		if(n)
+			printf("n!=0");
+}
+
+void TestWhile()
+{
+	int n;
+	n=1;
+	while(n<10)n=n*2;
+	
+	while(n){
+		n=n-1;
+		if(n/2){
+			printf(n);
+		}
+	}
+}
+
+int zero()
+{
+	return (0);
+}
+
+void TestExp()
+{
+	int i,j[10],k,m[10];
+	i=5;
+	m[zero()]=1;
+	j[i+i*zero()/('a'+'b')-(i+-1)]=i;
+	printf("j[1]:",j[1]);
+	printf("i:",j[i+m[i-i]-i]);
+}
+
+int fib(int i)
+{
+	if(i==0)return (0);
+	if(i==1){
+		return (1);
+	}
+	return (fib(i-1)+fib(i-2));
+}
+
+void main()
+{
+	int i;
+	TestIO();
+	TestCond();
+	TestIf();
+	TestWhile();
+	TestExp();
+	scanf(i);
+	printf(" fib(i): ",fib(i));
+}
